@@ -3,8 +3,6 @@ tagline: Enlightenment is a lie. The aliens wish to enslave us. Fight for humani
 short_name: Home
 profiles:
   development:
-    short_name: Dev
-    base_url: http://ransom.srw.id.au:4242
   stage:
     short_name: Stage
     base_url: http://stage.resistancevictoria.com
