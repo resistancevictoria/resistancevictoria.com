@@ -1,0 +1,45 @@
+!!!5
+%html
+  %head
+    %meta{ :charset=>'utf-8' }
+    %title #{site.title}
+    %meta{ :name=>'viewport', :content=>'width=device-width, initial-scale=1.0' }
+    :css
+      body {
+        padding-top: 60px;
+      }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
+    /[if lt IE 9]
+      %script{ :type=>'text/javascript', :src=>'//html5shim.googlecode.com/svn/trunk/html5.js' }
+    %link{ :rel=>'shortcut icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
+    %link{ :rel=>'apple-touch-icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.brand{ :href=>"#{site.base_url}" } #{site.short_name}
+          %ul.nav
+            %li
+              %a{ :href=>"#{site.base_url}/ingress" } About Ingress
+            %li
+              %a{ :href=>"#{site.base_url}/goal" } Our Goal
+            %li
+              %a{ :href=>"#{site.base_url}/comms" } Communications
+            %li
+              %a{ :href=>"#{site.base_url}/join" } Join the Resistance
+    .container
+      .hero-unit{:style=>'background: url(\'/images/bg.jpg\') no-repeat 50% 50%;'}
+        %h1 #{site.title}
+        %p #{site.tagline}
+        %p
+          %a.btn.btn-primary.btn-large{ :href=>"#{site.base_url}/join" }
+            %i.icon-info-sign.icon-white
+            Join the Resistance &raquo;
+      ~ content
+      %hr
+      %footer
+        %p{ :style=>'text-align: right; font-size: 75%;' } Generated #{Time.now}
+    -# Uncomment script tags (remove leading -#) when you're ready to use behaviors
+    %script{ :type=>'text/javascript', :src=>'//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js' }
+    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap-collapse.js" }
+    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/site.js" }

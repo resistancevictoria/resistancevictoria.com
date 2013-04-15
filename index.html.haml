@@ -1,0 +1,39 @@
+---
+layout: base
+ingress_report_id: 6Zyigylql2U
+---
+.row-fluid
+  .span4
+    %h2 About Ingress
+    %p Ingress is an augmented reality GPS game by Google that is played on Android smartphones and tablets in the real world.
+    %p
+      %a.btn{ :href=>"#{site.base_url}/ingress" } Learn More &raquo; 
+
+  .span4
+    %h2 Our Goal
+    %p Have fun protecting humanity from the alien Shapers who are attempting to infiltrate Earth and destroy humanity.
+    %p
+      %a.btn{ :href=>"#{site.base_url}/goal" } Learn More&raquo; 
+
+  .span4
+    %h2 Communications
+    %p How to get in touch with the Resistance.
+    %p
+      %a.btn{ :href=>"#{site.base_url}/comms" } Learn More &raquo; 
+.row-fluid
+  .span4
+    :textile
+      h2. Treaties
+
+      * -Melbourne (Birrarung Marr)-
+      ** No longer active
+      * -Ballarat (Lake Wendouree)-
+      ** No longer active
+      * Geelong (Eastern Beach)
+      ** Request details via comms when in Geelong.
+
+.row-fluid
+  .span12
+    %hr
+    %h2 Latest Ingress Report
+    %iframe{ :allowscriptaccess => "always", :allowFullScreen => "true", :frameborder => "0", :height => "430", :src => "http://www.youtube.com/embed/#{page.ingress_report_id}", :title => "YouTube video player", :width => "640"}
