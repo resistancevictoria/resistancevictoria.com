@@ -54,5 +54,7 @@ body {
 }
 
 .hero-unit {
+  -webkit-box-shadow: 0 0 20px 5px #00c0ff;
+  -moz-box-shadow: 0 0 20px 5px #00c0ff;
   box-shadow: 0 0 20px 5px #00c0ff;
 }
