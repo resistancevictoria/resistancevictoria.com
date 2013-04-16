@@ -10,6 +10,6 @@ Pages are written using a mixture of [haml](http://haml.info/), [textile](http:/
 
 Everything is version controlled and stored in a [git](http://git-scm.com/) repo.
 
-It is developed on a Debian VPS with staging and production hosted on [AWS](http://aws.amazon.com/) [S3](http://aws.amazon.com/s3/).
+Development is done on a Debian VPS with staging and production hosted on [AWS](http://aws.amazon.com/) [S3](http://aws.amazon.com/s3/).
 
 **&lt;/geekout&gt;**
