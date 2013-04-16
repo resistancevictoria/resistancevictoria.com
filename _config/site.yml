@@ -13,6 +13,7 @@ profiles:
       bucket: s3://stage.resistancevictoria.com/
   production:
     base_url: http://resistancevictoria.com
+    google_analytics: UA-40180228-1
     minify: true
     deploy:
       type: s3
