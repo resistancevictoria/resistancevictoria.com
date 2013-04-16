@@ -2,7 +2,7 @@
 layout: base
 title: README.md
 ---
-## README.md
+## #{page.title}
 
 This site is built using [{:awestruct}](http://awestruct.org) and the [Bootstrap](http://twitter.github.io/bootstrap/) framework.
 
