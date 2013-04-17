@@ -19,15 +19,15 @@
         .container
           %a.brand{ :href=>"#{site.base_url}" } #{site.short_name}
           %ul.nav
-            %li
+            %li{:class=>('active' if page.url =~ /^\/ingress\//)}<
               %a{ :href=>"#{site.base_url}/ingress" } About Ingress
-            %li
+            %li{:class=>('active' if page.url =~ /^\/goal\//)}<
               %a{ :href=>"#{site.base_url}/goal" } Our Goal
-            %li
+            %li{:class=>('active' if page.url =~ /^\/comms\//)}<
               %a{ :href=>"#{site.base_url}/comms" } Communications
-            %li
+            %li{:class=>('active' if page.url =~ /^\/report\//)}<
               %a{ :href=>"#{site.base_url}/report" } Ingress Report
-            %li
+            %li{:class=>('active' if page.url =~ /^\/join\//)}<
               %a{ :href=>"#{site.base_url}/join" } Join the Resistance
     .container
       .hero-unit{:style=>'background: url(\'/images/bg.jpg\') no-repeat 50% 50%;'}
