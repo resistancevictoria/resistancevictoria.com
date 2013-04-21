@@ -1,8 +1,9 @@
 title: Resistance Victoria
 tagline: Enlightenment is a lie. The aliens wish to enslave us. Fight for humanity.
-short_name: Home
+
 ingress_report_id: S3zgb6dujks
 ingress_beginners_guide: SOAy-_GUQ1Q
+
 profiles:
   development:
     short_name: Dev
@@ -14,6 +15,7 @@ profiles:
       type: s3
       bucket: s3://stage.resistancevictoria.com/
   production:
+    short_name: Home
     base_url: http://resistancevictoria.com
     google_analytics: UA-40180228-1
     minify: true
