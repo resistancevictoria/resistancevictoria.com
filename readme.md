@@ -4,6 +4,8 @@ title: README.md
 ---
 ## #{page.title}
 
+**&lt;geekout&gt;**
+
 This site is built using [{:awestruct}](http://awestruct.org) and the [Bootstrap](http://twitter.github.io/bootstrap/) framework.
 
 Pages are written using a mixture of [haml](http://haml.info/), [textile](http://textile.sitemonks.com/) and [md](http://daringfireball.net/projects/markdown/) (depending on layout requirements).
