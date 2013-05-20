@@ -4,12 +4,10 @@
 // Include responsive Bootstrap styles
 @import "bootstrap-responsive";
 
-// Font
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700,900,900italic);
-
 body {
   color: #336;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
 .navbar-inner .brand {
