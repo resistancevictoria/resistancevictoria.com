@@ -17,28 +17,33 @@
     %link{ :rel=>'shortcut icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
     %link{ :rel=>'apple-touch-icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.brand{ :href=>"#{site.base_url}" } #{site.short_name}
-          %ul.nav
-            %li{:class=>('active' if page.url =~ /^\/ingress\//)}<
-              %a{ :href=>"#{site.base_url}/ingress" } About Ingress
-            %li{:class=>('active' if page.url =~ /^\/goal\//)}<
-              %a{ :href=>"#{site.base_url}/goal" } Our Goal
-            %li{:class=>('active' if page.url =~ /^\/comms\//)}<
-              %a{ :href=>"#{site.base_url}/comms" } Communications
-            %li{:class=>('active' if page.url =~ /^\/report\//)}<
-              %a{ :href=>"#{site.base_url}/report" } Ingress Report
-            %li{:class=>('active' if page.url =~ /^\/join\//)}<
-              %a{ :href=>"#{site.base_url}/join" } Join the Resistance
+    %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+      .navbar-header
+        %a.navbar-brand{ :href=>"#{site.base_url}" } #{site.short_name}
+        %button.navbar-toggle{:type => "button", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav
+          %li{:class=>('active' if page.url =~ /^\/ingress\//)}<
+            %a{ :href=>"#{site.base_url}/ingress" } About Ingress
+          %li{:class=>('active' if page.url =~ /^\/goal\//)}<
+            %a{ :href=>"#{site.base_url}/goal" } Our Goal
+          %li{:class=>('active' if page.url =~ /^\/comms\//)}<
+            %a{ :href=>"#{site.base_url}/comms" } Communications
+          %li{:class=>('active' if page.url =~ /^\/report\//)}<
+            %a{ :href=>"#{site.base_url}/report" } Ingress Report
+          %li{:class=>('active' if page.url =~ /^\/join\//)}<
+            %a{ :href=>"#{site.base_url}/join" } Join the Resistance
     .container
-      .hero-unit{:style=>'background: url(\'/images/bg.jpg\') no-repeat 50% 50%;'}
+      .jumbotron{:style=>'background: url(\'/images/bg.jpg\') no-repeat 50% 50%;'}
         %h1 #{site.title}
         %p "<span class='tagline'>#{site.tagline}</span>"
         %p
-          %a.btn.btn-primary.btn-large{ :href=>"#{site.base_url}/join" }
-            %i.icon-info-sign.icon-white
+          %a.btn.btn-default.btn-primary.btn-large{ :href=>"#{site.base_url}/join" }
+            %i.glyphicon.glyphicon-info-sign.glyphicon-white
             Join the Resistance &raquo;
       ~ content
       %hr
@@ -60,8 +65,10 @@
           ]
 
     -# Uncomment script tags (remove leading -#) when you're ready to use behaviors
-    %script{ :type=>'text/javascript', :src=>'//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js' }
-    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap-collapse.js" }
+    %script{ :type=>'text/javascript', :src=>"//codeorigin.jquery.com/jquery-1.10.2.min.js" }
+    %script{ :type=>'text/javascript', :src=>"//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js" }
+    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap/collapse.js" }
+    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap/button.js" }
     %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/site.js" }
     - if site.google_analytics
       = google_analytics_async

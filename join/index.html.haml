@@ -2,8 +2,8 @@
 layout: base
 title: Joining the Resistance
 ---
-.row-fluid
-  .span8
+.row
+  .col-md-8
     :textile
       h2. #{page.title}
 
@@ -21,5 +21,5 @@ title: Joining the Resistance
       h3. Whoops, I chose Enlightened
 
       If you made the wrong choice and mistakenly sided with the aliens don't worry you can always "apply for a faction change":https://support.google.com/ingress/?contact=1#contact=1 and we will help you regain your previous level.
-  .span4
-    %img{ :src=> '/images/resistance.png' }
+  .col-md-4
+    %img.img-responsive{ :src=> '/images/resistance.png' }

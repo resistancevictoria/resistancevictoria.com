@@ -1,8 +1,4 @@
-// I gather this file is a starting point for the project.
 @import "bootstrap.scss";
-
-// Include responsive Bootstrap styles
-@import "bootstrap-responsive.scss";
 
 body {
   color: #336;
@@ -15,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Coda', cursive;
 }
 
-.navbar-inner .brand {
+.navbar-brand {
   background-color: #00c0ff;
   color: #000 !important;
   text-shadow: none !important;
@@ -30,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ef', endColorstr='#00c0ff', GradientType=0);
 
   background-repeat: repeat-x;
-
 }
 
 .navbar .nav > li > a:hover {
@@ -60,14 +55,14 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: none;
 }
 
-.hero-unit {
+.jumbotron {
   -webkit-box-shadow: 0 0 20px 5px #00c0ff;
   -moz-box-shadow: 0 0 20px 5px #00c0ff;
   box-shadow: 0 0 20px 5px #00c0ff;
   min-width: 325px;
 }
 
-.hero-unit .tagline {
+.jumbotron .tagline {
   background-color: #2290f8;
   color: white;
   padding: 4px;

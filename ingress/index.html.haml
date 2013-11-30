@@ -3,8 +3,8 @@ layout: base
 title: About Ingress
 ---
 
-.row-fluid
-  .span8
+.row
+  .col-md-8
     :textile
       h2. #{page.title}
 
@@ -20,5 +20,5 @@ title: About Ingress
 
     %iframe{ :allowscriptaccess => "always", :allowFullScreen => "true", :frameborder => "0", :height => "430", :src => "http://www.youtube.com/embed/#{site.ingress_beginners_guide}", :title => "YouTube video player", :width => "640"}
 
-  .span4
-    %img{ :src=> '/images/ingress.png' }
+  .col-md-4
+    %img.img-responsive{ :src=> '/images/ingress.png' }
