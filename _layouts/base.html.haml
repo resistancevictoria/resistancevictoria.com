@@ -13,7 +13,9 @@
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"http://fonts.googleapis.com/css?family=Coda" }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
     /[if lt IE 9]
-      %script{ :type=>'text/javascript', :src=>'//html5shim.googlecode.com/svn/trunk/html5.js' }
+      %script{ :type=>'text/javascript', :src=>'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' }
+      %script{ :type=>'text/javascript', :src=>'https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js' }
+      
     %link{ :rel=>'shortcut icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
     %link{ :rel=>'apple-touch-icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
   %body
@@ -68,8 +70,6 @@
     -# Uncomment script tags (remove leading -#) when you're ready to use behaviors
     %script{ :type=>'text/javascript', :src=>"//codeorigin.jquery.com/jquery-1.10.2.min.js" }
     %script{ :type=>'text/javascript', :src=>"//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js" }
-    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap/collapse.js" }
-    %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/bootstrap/button.js" }
     %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascripts/site.js" }
     - if site.google_analytics
       = google_analytics_async
