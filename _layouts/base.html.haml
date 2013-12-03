@@ -40,14 +40,15 @@
               %a{ :href=>"#{site.base_url}/report" } Ingress Report
             %li{:class=>('active' if page.url =~ /^\/join\//)}<
               %a{ :href=>"#{site.base_url}/join" } Join the Resistance
-    .container
-      .jumbotron{:style=>'background: url(\'/images/bg.jpg\') no-repeat 50% 50%;'}
+    %section{:id => "megatron", "data-speed" => "3", "data-type" => "background"}
+      .jumbotron
         %h1 #{site.title}
         %p "<span class='tagline'>#{site.tagline}</span>"
         %p
           %a.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
             %i.glyphicon.glyphicon-info-sign.glyphicon-white
             Join the Resistance &raquo;
+    .container
       ~ content
       %hr
       %footer
