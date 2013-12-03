@@ -42,12 +42,13 @@
               %a{ :href=>"#{site.base_url}/join" } Join the Resistance
     %section{:id => "megatron", "data-speed" => "3", "data-type" => "background"}
       .jumbotron
-        %h1 #{site.title}
-        %p "<span class='tagline'>#{site.tagline}</span>"
-        %p
-          %a.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
-            %i.glyphicon.glyphicon-info-sign.glyphicon-white
-            Join the Resistance &raquo;
+        .container
+          %h1 #{site.title}
+          %p "<span class='tagline'>#{site.tagline}</span>"
+          %p
+            %a.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
+              %i.glyphicon.glyphicon-info-sign.glyphicon-white
+              Join the Resistance &raquo;
     .container
       ~ content
       %hr
