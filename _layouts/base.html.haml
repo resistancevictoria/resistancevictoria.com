@@ -11,6 +11,7 @@
       }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100" }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"http://fonts.googleapis.com/css?family=Coda" }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
     /[if lt IE 9]
       %script{ :type=>'text/javascript', :src=>'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' }
@@ -47,7 +48,7 @@
           %p "<span class='tagline'>#{site.tagline}</span>"
           %p
             %a.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
-              %i.glyphicon.glyphicon-info-sign.glyphicon-white
+              %i.fa.fa-info-circle.fa-lg
               Join the Resistance &raquo;
     .container
       ~ content
@@ -56,12 +57,6 @@
         %p{ :style=>'text-align: right; font-size: 75%;' }
           Generated #{Time.now} by
           %a{ :href=>"http://awestruct.org/" } {:awestruct}
-        %p{ :style=>'text-align: right; font-size: 75%;' }
-          Icons from
-          = succeed ',' do
-            %a{ :href=>"http://glyphicons.com" } Glyphicons Free
-          licensed under
-          %a{ :href=>"http://creativecommons.org/licenses/by/3.0/" } CC BY 3.0
         %p{ :style=>'text-align: right; font-size: 75%;' }
           [
           %a{ :href=>"https://plus.google.com/101002254674101161051", :rel=>"publisher" } Google+
