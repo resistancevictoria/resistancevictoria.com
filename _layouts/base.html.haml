@@ -58,12 +58,11 @@
         %p{ :style=>'text-align: right; font-size: 75%;' }
           Generated #{Time.now} by
           %a{ :href=>"http://awestruct.org/" } {:awestruct}
-        %p{ :style=>'text-align: right; font-size: 75%;' }
-          [
-          %a{ :href=>"https://plus.google.com/101002254674101161051", :rel=>"publisher" } Google+
-          &hellip;
-          %a{ :href=>"/readme.html" } README.md
-          ]
+        %p{ :style=>'text-align: right; font-size: 125%;' }
+          %a{ :href=>"https://plus.google.com/101002254674101161051", :rel=>"publisher" }
+            %i.fa.fa-google-plus-square
+          %a{ :href=>"/readme.html" }
+            %i.fa.fa-question-circle
 
     -# Uncomment script tags (remove leading -#) when you're ready to use behaviors
     %script{ :type=>'text/javascript', :src=>"//codeorigin.jquery.com/jquery-1.10.2.min.js" }
