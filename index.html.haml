@@ -3,7 +3,8 @@ layout: base
 ---
 .row
   .col-md-4
-    %h2 About Ingress
+    %a{ :href=>"#{site.base_url}/ingress" }
+      %h2 About Ingress
     %p Ingress is an augmented reality GPS game by Google that is played on Android smartphones and tablets in the real world.
     %p
       %a.btn-default.btn{ :href=>"#{site.base_url}/ingress" }
@@ -11,7 +12,8 @@ layout: base
         %i.fa.fa-angle-double-right.fa-2x
 
   .col-md-4
-    %h2 Our Goal
+    %a{ :href=>"#{site.base_url}/goal" }
+      %h2 Our Goal
     %p Have fun while protecting humanity from the alien Shapers who are attempting to infiltrate Earth and destroy humanity.
     %p
       %a.btn-default.btn{ :href=>"#{site.base_url}/goal" }
@@ -19,7 +21,8 @@ layout: base
         %i.fa.fa-angle-double-right.fa-2x
 
   .col-md-4
-    %h2 Communications
+    %a{ :href=>"#{site.base_url}/comms" }
+      %h2 Communications
     %p How to get in touch with the Resistance.
     %p
       %a.btn-default.btn{ :href=>"#{site.base_url}/comms" }
