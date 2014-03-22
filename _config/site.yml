@@ -7,7 +7,7 @@ ingress_beginners_guide: SOAy-_GUQ1Q
 profiles:
   development:
     short_name: Dev
-    base_url: http://ransom.srw.id.au:4242
+    base_url: /
   stage:
     short_name: Stage
     base_url: http://stage.resistancevictoria.com

@@ -1,4 +1,5 @@
 require 'bootstrap-sass'
+require 'haml/filters/textile'
 
 Awestruct::Extensions::Pipeline.new do
   # extensions
