@@ -108,6 +108,11 @@ task :deploy => :check do
   run_awestruct '-P production -g --force --deploy'
 end
 
+desc 'Generate the site and deploy to staging'
+task :stage => :check do
+  run_awestruct '-P stage -g --force --deploy'
+end
+
 desc 'Clean out generated site and temporary files'
 task :clean, :spec do |task, args|
   require 'fileutils'

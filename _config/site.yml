@@ -4,20 +4,19 @@ tagline: Enlightenment is a lie. The aliens wish to enslave us. Fight for humani
 ingress_report_id: DI-5BqE61_E
 ingress_beginners_guide: SOAy-_GUQ1Q
 
+base_url: ''
+
 profiles:
   development:
     short_name: Dev
-    base_url: /
   stage:
     short_name: Stage
-    base_url: http://stage.resistancevictoria.com
     deploy:
       type: s3
       bucket: s3://stage.resistancevictoria.com/
       uncommitted: true
   production:
     short_name: Home
-    base_url: http://resistancevictoria.com
     google_analytics: UA-40180228-1
     minify: true
     deploy:
