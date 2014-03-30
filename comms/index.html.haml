@@ -9,186 +9,46 @@ title: Communications
         #{page.title}
 
     %p
-      Once you have activated your scanner and joined the Resistance you should 
+      Once you have activated your scanner and joined the Resistance
+      you should 
       %em
         "ask to join"
-      any local communities below and reach out to your nearby fellow Resistance agents via faction comms. They can help you with portal locations, supplies, tactics, levelling up and the best places for food and drinks when the Ingressing gets too much (or you're waiting for a portal to cool down).
-.row
-  .col-md-12
-    %h3 Resistance Area Comms
-.row
-  .col-md-4
-    %h4 Victoria Wide
+      any local communities below and reach out to your nearby fellow
+      Resistance agents via faction comms. They can help you with
+      portal locations, supplies, tactics, levelling up and the best
+      places for food and drinks when the Ingressing gets too much (or
+      you're waiting for a portal to cool down).
 
-    %p
-      After you 
-      %em
-        "ask to join"
-      this community go to
-      %a{:href=>"http://ingress.com/intel"} ingress.com/intel
-      and centre your map over Melbourne then in faction chat broadcast your Google+ initials to prove your Resistance credentials e.g.
-      %em
-        "request to join g+ group, my initials are JB @nicktorious @maiestia @puddle @simonoid"
-      or if you already know a Resistance member ask them to vouch for you in the group and a mod will invite you.
+- if site.comms
+  .row
+    .col-md-12
+      %h3 Resistance Area Comms
 
-    %p
-      The 
-      %em
-        @nicktorious @maiestia @puddle @simonoid
-      part makes it easier for our mods to see your request and add you to the community quicker.
+  - site.comms.each_slice(3) do |slice|
+    .row
+      - slice.each do |area|
+        .col-md-4
+          .panel.panel-default
+            .panel-heading
+              %h4
+                %i.fa.fa-map-marker
+                #{area.group_name}
+            .panel-body
+              - if area.blurb
+                :textile
+                  #{ area.blurb }
+              - if area.url
+                %p
+                  %a.btn-default.btn{ :href=>area.url }
+                    %i.fa.fa-google-plus-square
+                    Visit Community
+            .panel-footer
+              - if area.verified_agents
+                %small
+                  %i.fa.fa-lock
+                  This community is for verified Resistance members only.
 
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
 
-    %p
-      %a.btn-default.btn{ :href=>"#{site.base_url}/community" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-
-  .col-md-4
-    %h4 Geelong
-
-    %p
-      To join this community use the same method as described for the
-      %em
-        Victoria Wide
-      community but instead centre the map over Geelong and change the broadcast to: 
-      %em
-        "request to join Geelong group, my initials are JB".
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"#{site.base_url}/geelong" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-  .col-md-4
-    %h4 Ballarat
-
-    %p
-      To join this community use the same method as described for the
-      %em
-        Victoria Wide
-      community but instead centre the map over Ballarat and change the broadcast to:
-      %em
-        "request to join Ballarat group, my initials are JB".
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"#{site.base_url}/ballarat" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-.row
-  .col-md-4
-    %h4 North East Melbourne
-
-    %p
-      To join this community use the same method as described for the
-      %em
-        Victoria Wide
-      community but instead centre the map over North East Melbourne and change the broadcast to:
-      %em
-        "request to join North East Melbourne group, my initials are JB".
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"#{site.base_url}/nemelb" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-  .col-md-4
-    %h4 East Melbourne
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"https://plus.google.com/communities/104078442820685324931" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-  .col-md-4
-    %h4 Gippsland
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"https://plus.google.com/communities/115523627272337427727" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-.row
-  .col-md-4
-    %h4 Western Victoria
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"https://plus.google.com/communities/111519469334095888318" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-  .col-md-4
-    %h4 St Kilda
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"https://plus.google.com/communities/100122828720410161488" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-  .col-md-4
-    %h4 Peninsula
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"https://plus.google.com/communities/118136969167414076329" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-.row
-  .col-md-4
-    %h4 Bendigo
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"https://plus.google.com/communities/101762127203724788786" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-  .col-md-4
-    %h4 South East Melbourne
-
-    %p
-      %i.fa.fa-lock
-      This community is for verified Resistance members only.
-
-    %p
-      %a.btn-default.btn{ :href=>"https://plus.google.com/communities/103835807968356782907" }
-        %i.fa.fa-google-plus-square
-        Visit Community
-  .col-md-4
-    %h4 Victoria wide - The Cabal
-
-    %p Do good high impact work and you will get a tap on the shoulder.
-
-    %p Invite only for highly active and effective players.
 .row
   .col-md-12
     %hr
@@ -213,7 +73,8 @@ title: Communications
     %p
       To verify first 
       %em "ask to join"
-      the community and then go to the Intel site, centre your map over Melbourne and broadcast on 
+      the community and then go to the Intel site, centre your map
+      over Melbourne and broadcast on 
       %strong public comms:
       %em "request to join all faction group, my initials are JB"
       (using your own initials of course).
@@ -240,7 +101,9 @@ title: Communications
           Add your community link to this page
       .panel-body
         %p
-          If you've created a community for your local area or special interest Ingress group and want it listed above simply send the details to
+          If you've created a community for your local area or special
+          interest Ingress group and want it listed above simply send
+          the details to
           %code agent@resistancevictoria.com
           and it will be added here as quickly as possible.
 .row
@@ -252,6 +115,10 @@ title: Communications
           Beware of spies
       .panel-body
         %p
-          We are aware that Enlightened have spy agents in our communities and our secure faction comms. Keep this in mind when you are planning large impact operations, only communicate with agents you know and trust via more direct and secure communications methods such as
+          We are aware that Enlightened have spy agents in our
+          communities and our secure faction comms. Keep this in mind
+          when you are planning large impact operations, only
+          communicate with agents you know and trust via more direct
+          and secure communications methods such as
           %em Google+ Hangouts.
           Feeding misinformation to spies can sometimes be handy.
