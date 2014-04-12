@@ -49,6 +49,10 @@
               %a{ :href=>"#{site.base_url}/report" } Ingress Report
             %li{:class=>('active' if page.url =~ /^\/join\//)}<
               %a{ :href=>"#{site.base_url}/join" } Join the Resistance
+            %li{:class=>('active' if page.url =~ /^\/interitus\//)}<
+              %a{ :href=>"#{site.base_url}/interitus" }
+                %img{ :src=>"/images/interitus18.png", :title=>"#interitus" }
+                Interitus
     %section{:id => "megatron", "data-speed" => "3", "data-type" => "background"}
       .jumbotron
         .container

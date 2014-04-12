@@ -1,0 +1,47 @@
+---
+layout: base
+title: Interitus
+---
+
+%h2
+  %img{ :src=>"/images/interitus50.png" }
+  <strong>#INTERITUS</strong> XM ANOMALY EVENT IN MELBOURNE
+
+.row
+  .col-md-10
+    %p Melbourne has been confirmed as a primary site for an anomaly event on Saturday May 17th, 2014 as part of the <a href="http://google.com/+ingress/about">#INTERITUS</a> XM anomaly series. If you wish to be involved it is important that you join our <a href="/community">Google+ community</a> as that is where we will be posting updates.
+
+    %p On the day the event will run from 11am until 6pm, <a href="http://goo.gl/BFg59R">be sure to let the organisers know you are planning to attend!</a>
+
+    %p Generic updates will be posted to our <a href="/community">Google+ community</a> but if you want to be involved in planning or know what the Resistance is planning for the event then you are encouraged to join the <a href="http://tinyurl.com/mu4kzge">Resistance anomaly community</a> - we want to keep this community Enlightened free so you will need to be vouched for.
+
+    %p Lets have an epic fun battle!
+
+.row
+  .col-md-10
+    %h2 Countdown to event
+.row
+  .col-md-10
+    .interitus-countdown
+
+:javascript
+  $(function() {
+    var intertius = Math.round((new Date(Date.UTC(2014, 4, 17, 1, 0, 0)).getTime()/1000));
+
+    var clock = $('.interitus-countdown').flipcountdown({
+        size:"md",
+        tick: function() {
+                var nol = function(h){
+                        return h>9?h:'0'+h;
+                }
+                var     range  = intertius-Math.round((new Date()).getTime()/1000),
+                        secday = 86400, sechour = 3600,
+                        days   = parseInt(range/secday),
+                        hours  = parseInt((range%secday)/sechour),
+                        min    = parseInt(((range%secday)%sechour)/60),
+                        sec    = ((range%secday)%sechour)%60;
+                return nol(days)+' '+nol(hours)+' '+nol(min)+' '+nol(sec);
+              }
+      });
+  });
+
