@@ -17,7 +17,8 @@ profiles:
       uncommitted: true
   production:
     short_name: Home
-    google_analytics: UA-40180228-1
+    google_analytics:
+      account: UA-40180228-1
     minify: true
     deploy:
       type: s3

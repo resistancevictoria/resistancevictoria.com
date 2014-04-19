@@ -1,9 +1,8 @@
 ---
 layout: base
-title: README.md
 ---
 
-## <i class="fa fa-cogs"></i> #{page.title}
+## <i class="fa fa-cogs"></i> README.md
 
 **&lt;geekout&gt;**
 
