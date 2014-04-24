@@ -20,6 +20,10 @@ profiles:
     google_analytics:
       account: UA-40180228-1
     minify: true
+    haml:
+      :ugly: true
+    scss:
+      :style: :compressed
     deploy:
       type: s3
       bucket: s3://resistancevictoria.com/
