@@ -1,8 +1,10 @@
 .awestruct
 .bundle
 .sass-cache
+Gemfile.lock
 _site
 _tmp
+_bin
 _deploy
 *.swp
 *.bak
