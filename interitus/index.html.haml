@@ -4,43 +4,17 @@ title: Interitus
 ---
 
 %h2
-  <strong>#INTERITUS</strong> XM ANOMALY EVENT IN MELBOURNE
+  <strong>#INTERITUS</strong> XM ANOMALY EVENT: MELBOURNE MAY 17, 2014
 
 .row
   .col-md-8
-    %p Melbourne has been confirmed as a primary site for an anomaly event on Saturday May 17th, 2014 as part of the <a href="http://google.com/+ingress/about">#INTERITUS</a> XM anomaly series. If you wish to be involved it is important that you join our <a href="/community">Google+ community</a> as that is where we will be posting updates.
+    %p Much love to the organisers and particpants for a fun afternoon in Melbourne fighting for our future.
 
-    %p The event will run from 11am until 6pm please be sure to <a href="http://goo.gl/BFg59R">let the organisers know you are planning to attend</a>.
+    %p We hope everyone had an epic fun battle!
 
-    %p Generic updates will be posted to our <a href="/community">Google+ community</a> but if you want to be involved in planning or know what the Resistance is planning for the event then you are encouraged to join the <a href="http://tinyurl.com/mu4kzge">Resistance anomaly community</a> - we want to keep this community Enlightened free so you will need to be vouched for.
-
-    %p Lets have an epic fun battle!
+    %p Be sure and share your photos and videos from the event on <a href="http://goo.gl/BFg59R">the event page</a>.
 
     %code &lt;/agent&gt;
-    %h2 Countdown to event
-
-    .interitus-countdown
-
-    :javascript
-      $(function() {
-        var intertius = Math.round((new Date(Date.UTC(2014, 4, 17, 1, 0, 0)).getTime()/1000));
-
-        var clock = $('.interitus-countdown').flipcountdown({
-            size:"md",
-            tick: function() {
-                    var nol = function(h){
-                            return h>9?h:'0'+h;
-                    }
-                    var     range  = intertius-Math.round((new Date()).getTime()/1000),
-                            secday = 86400, sechour = 3600,
-                            days   = parseInt(range/secday),
-                            hours  = parseInt((range%secday)/sechour),
-                            min    = parseInt(((range%secday)%sechour)/60),
-                            sec    = ((range%secday)%sechour)%60;
-                    return nol(days)+' '+nol(hours)+' '+nol(min)+' '+nol(sec);
-                  }
-          });
-      });
 
   .col-md-4.hidden-xs
     %img.img-responsive{ :src=> '/images/interitus.png' }
