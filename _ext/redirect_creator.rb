@@ -69,7 +69,7 @@ module Awestruct
 </head>
 
 <body>
-<h1>Redirection</h1>
+<h1>#{@requested_url} Redirection</h1>
 <p>You will be teleported in 3 seconds to <a href='#{@target_url}'>#{@target_url}</a> (if not, please click).</p>
 <script>
 ga('send', 'redirect', {
