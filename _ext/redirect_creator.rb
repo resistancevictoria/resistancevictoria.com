@@ -75,7 +75,7 @@ module Awestruct
 ga('send', 'redirect', {
   'page': '#{@requested_url}',
   'hitCallback': function() {
-    window.location.replace = "#{@target_url}";
+    window.location.href = "#{@target_url}";
   }
 });
 </script>
