@@ -10,4 +10,4 @@ layout: base
 
 **&lt;/geekout&gt;**
 
-Direct questions about this website to `agent@resistancevictoria.com`
+Direct questions about this website to `agent@vic.blue`

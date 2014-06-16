@@ -26,4 +26,4 @@ profiles:
       :style: :compressed
     deploy:
       type: s3
-      bucket: s3://resistancevictoria.com/
+      bucket: s3://vic.blue/
