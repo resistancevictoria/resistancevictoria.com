@@ -60,23 +60,28 @@ module Awestruct
 
       def rendered_content(context, with_layouts=true)
         %{<!DOCTYPE HTML>
-          <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="refresh" content="1; url=#{@target_url}">
+<html>
+<head>
+<title>Redirection</title>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="3; url=#{@target_url}">
+#{google_analytics_universal}
+</head>
 
-          #{google_analytics_universal}
-
-          <script>
-          window.location.href = "#{@target_url}"
-          </script>
-
-          <title>Page Redirection</title>
-          </head>
-
-          <body>
-          Redirection... We will teleport you in 1 second to the <a href='#{@target_url}'>right place</a> (if not, please click).
-          </body>
-          }
+<body>
+<h1>Redirection</h1>
+<p>You will be teleported in 3 seconds to <a href='#{@target_url}'>#{@target_url}</a> (if not, please click).</p>
+<script>
+ga('send', 'redirect', {
+  'page': '#{@requested_url}',
+  'hitCallback': function() {
+    window.location.replace = "#{@target_url}";
+  }
+});
+</script>
+</body>
+</html>
+}
       end
     end
   end
