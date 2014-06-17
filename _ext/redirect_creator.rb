@@ -66,11 +66,38 @@ module Awestruct
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="3; url=#{@target_url}">
 #{google_analytics_universal}
+<style>
+body { background: black; color: green; }
+</style>
 </head>
 
 <body>
-<h1>#{@requested_url} Redirection</h1>
-<p>You will be teleported in 3 seconds to <a href='#{@target_url}'>#{@target_url}</a> (if not, please click).</p>
+<pre>
+______________    ______________
+||xxxxxxxxxx/  __  \\xxxxxxxxxx||
+||            //\\\\            ||
+||  |XXXXXXXXX(  )XXXXXXXXX|  ||   ALERT:  AGENT REDIRECTION REQUESTED
+||  |X        \\\\//        X|  ||
+||  |X\\.       ^^       ./X|  ||
+||    \\XX\\.          ./XX/    ||   REQUESTED URL: #{@requested_url}
+||      ^\\XX\\./xx\\./XX/^      ||
+||         ^\\XXXXXX/^         ||
+||            |XX|            ||   NEW LOCATION REQUESTED:
+||           (XXXX)           ||
+||            |XX|            ||     <a href='#{@target_url}'>#{@target_url}</a>
+||            |XX|            ||
+||      _____ |XX|            ||
+||      |XXX| |XX|            ||   PLEASE STAND BY...
+||      |X____|XX|            ||
+\\\\\\     |XXXXXXXX|           ///
+  \\\\\\   ^\\XXXXXXX|         ///
+    \\\\\\   ^\\| |XX|       ///
+      \\\\\\     |XX|     ///
+        \\\\\\    \\/    ///
+          \\\\\\      ///
+            \\\\\\__///
+              \\\\//
+</pre>
 <script>
 ga('send', 'event', 'redirect', {
   'page': '#{@requested_url}',
