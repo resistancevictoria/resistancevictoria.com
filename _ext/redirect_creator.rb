@@ -67,7 +67,10 @@ module Awestruct
 <meta http-equiv="refresh" content="3; url=#{@target_url}">
 #{google_analytics_universal}
 <style>
-body { background: black; color: green; }
+body { background: #444; color: #00c2ff; }
+a { text-decoration: underline; }
+a:link { color: #fff; }
+a:visited { color: #fff; }
 </style>
 </head>
 
@@ -77,21 +80,21 @@ ______________    ______________
 ||xxxxxxxxxx/  __  \\xxxxxxxxxx||
 ||            //\\\\            ||
 ||  |XXXXXXXXX(  )XXXXXXXXX|  ||   ALERT:  AGENT REDIRECTION REQUESTED
-||  |X        \\\\//        X|  ||
+||  |X        \\\\//        X|  ||   ===================================
 ||  |X\\.       ^^       ./X|  ||
 ||    \\XX\\.          ./XX/    ||   REQUESTED URL: #{@requested_url}
-||      ^\\XX\\./xx\\./XX/^      ||
+||      ^\\XX\\./xx\\./XX/^      ||   -----------------------------------
 ||         ^\\XXXXXX/^         ||
-||            |XX|            ||   NEW LOCATION REQUESTED:
+||            |XX|            ||   NEW LOCATION:
 ||           (XXXX)           ||
-||            |XX|            ||     <a href='#{@target_url}'>#{@target_url}</a>
+||            |XX|            ||   => <a href='#{@target_url}'>#{@target_url}</a>
 ||            |XX|            ||
 ||      _____ |XX|            ||
 ||      |XXX| |XX|            ||   PLEASE STAND BY...
 ||      |X____|XX|            ||
-\\\\\\     |XXXXXXXX|           ///
+\\\\\\     |XXXXXXXX|           ///   STAND BY...
   \\\\\\   ^\\XXXXXXX|         ///
-    \\\\\\   ^\\| |XX|       ///
+    \\\\\\   ^\\| |XX|       ///       STAND BY...
       \\\\\\     |XX|     ///
         \\\\\\    \\/    ///
           \\\\\\      ///
