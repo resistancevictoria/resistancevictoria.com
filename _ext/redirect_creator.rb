@@ -99,7 +99,7 @@ ______________    ______________
               \\\\//
 </pre>
 <script>
-ga('send', 'event', 'redirect', {
+ga('send', 'event', 'redirect', 'ga', {
   'page': '#{@requested_url}',
   'hitCallback': function() {
     window.location.href = "#{@target_url}";
