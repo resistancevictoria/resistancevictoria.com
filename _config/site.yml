@@ -18,7 +18,7 @@ profiles:
   production:
     short_name: Home
     google_analytics:
-      account: UA-40180228-1
+      account: UA-40180228-2
     minify: true
     haml:
       :ugly: true
