@@ -16,12 +16,11 @@
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' }
 
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"/stylesheets/styles.css" }
-    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"/stylesheets/jquery.flipcountdown.css" }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"/stylesheets/animate.css" }
 
     %script{ :type=>'text/javascript', :src=>"//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" }
     %script{ :type=>'text/javascript', :src=>"//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" }
     %script{ :type=>'text/javascript', :src=>"/javascripts/site.js" }
-    %script{ :type=>'text/javascript', :src=>'/javascripts/jquery.flipcountdown.js' }
 
     /[if lt IE 9]
       %script{ :type=>'text/javascript', :src=>'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' }
@@ -61,7 +60,7 @@
           %h1 #{site.title}
           %p "<span class='tagline'>#{site.tagline}</span>"
           %p
-            %a.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
+            %a.animated.bounceIn.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
               %i.fa.fa-info-circle.fa-lg
               Join the Resistance
               %i.fa.fa-angle-double-right
