@@ -6,6 +6,10 @@ ingress_beginners_guide: SOAy-_GUQ1Q
 
 base_url: ''
 
+news:
+  text: Resistance Wins Interitus
+  url: https://plus.google.com/+Ingress/posts/2Vv7HL1nCqe
+
 profiles:
   development:
     short_name: Dev
