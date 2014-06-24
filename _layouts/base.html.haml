@@ -59,7 +59,8 @@
       .jumbotron
         .container
           %h1 #{site.title}
-          %p "<span class='tagline'>#{site.tagline}</span>"
+          %p
+            %span.tagline #{site.tagline}
           %p
             %a.animated.bounceIn.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
               %i.fa.fa-info-circle.fa-lg
