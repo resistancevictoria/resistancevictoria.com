@@ -74,10 +74,12 @@
           Generated #{Time.now} by
           %a{ :href=>"http://awestruct.org/" } {:awestruct}
         %p{ :style=>'text-align: right; font-size: 125%;' }
-          %a{ :href=>"https://plus.google.com/101002254674101161051", :rel=>"publisher" }
+          %a{ :href=>"/readme.html", :title=>"Site infomation" }<
+            %i.fa.fa-info-circle
+          %a{ :href=>"https://plus.google.com/101002254674101161051", :rel=>"publisher", :title=>"Google+ Community Page" }<
             %i.fa.fa-google-plus-square
-          %a{ :href=>"/readme.html" }
-            %i.fa.fa-question-circle
+          %a{ :href=>"mailto:agent@vic.blue", :title=>"email site agent" }<
+            %i.fa.fa-envelope
 
     - if site.google_analytics
       = google_analytics_universal
