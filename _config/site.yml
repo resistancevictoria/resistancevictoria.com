@@ -7,7 +7,7 @@ ingress_beginners_guide: SOAy-_GUQ1Q
 base_url: ''
 
 news:
-  text: iOS Support Coming Soon! <i class="fa fa-android"></i> <i class="fa fa-heart-o fa-lg"></i> <i class="fa fa-apple"></i>
+  text: <i class="fa fa-lg fa-fw fa-android"></i><i class="fa fa-fw fa-plus"></i><i class="fa fa-lg fa-fw fa-apple"></i><i class="fa fa-fw fa-arrow-right"></i><i class="fa fa-lg fa-fw fa-heart"></i><br><br>The Resistance Welcomes iOS Agents
   url: https://www.youtube.com/watch?v=RWOuVdG_b68
 
 app:
