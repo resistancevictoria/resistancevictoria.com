@@ -8,7 +8,7 @@ base_url: ''
 
 news:
   text: <i class="fa fa-lg fa-fw fa-android"></i><i class="fa fa-fw fa-plus"></i><i class="fa fa-lg fa-fw fa-apple"></i><i class="fa fa-fw fa-arrow-right"></i><i class="fa fa-lg fa-fw fa-heart"></i><br><br>The Resistance Welcomes iOS Agents
-  url: https://itunes.apple.com/au/app/ingress/id576505181?mt=8&uo=4
+  url: /ios
 
 app:
   android: https://play.google.com/store/apps/details?id=com.nianticproject.ingress
