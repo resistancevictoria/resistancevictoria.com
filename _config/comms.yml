@@ -125,6 +125,22 @@
      
     *request to join SE Melbourne group, my initials are XY*
 
+- group_name: VIC &amp; NSW Rural Resistance
+  verified_agents: true
+  url: http://gplus.to/BorderResistance
+  blurb: >
+    To join this group a request must be put in on the group page
+    then the account will be sent a Private Message with a
+    verification code that must be entered into Faction Chat.
+
+- group_name: Shepparton Resistance
+  verified_agents: true
+  url: http://gplus.to/SheppartonResistance
+  blurb: >
+    To join this group a request must be put in on the group page
+    then the account will be sent a Private Message with a
+    verification code that must be entered into Faction Chat.
+
 - group_name: Victoria wide - The Cabal
   verified_agents: true
   url: false
