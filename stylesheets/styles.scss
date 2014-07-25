@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
 .navbar-brand {
@@ -89,7 +90,6 @@ footer {
   margin: 0 auto;
   width: 100%;
   position: relative;
-  box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
 .jumbotron { background-color: transparent; }
