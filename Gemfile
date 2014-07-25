@@ -42,3 +42,4 @@ gem 'kramdown', '>= 0.14.2'                             # If using Markdown
 gem 'uglifier', '>= 1.3.0'                              # If using the minify transformer
 gem 'htmlcompressor', '>= 0.0.3'                        # If using the minify transformer
 gem 'haml-contrib', '>= 0'
+gem 'colorize', '>= 0.7.3'
