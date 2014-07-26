@@ -2,7 +2,10 @@
 %html
   %head
     %meta{ :charset=>'utf-8' }
-    %title #{site.title}
+    - if page.title
+      %title #{site.title} ... #{page.title}
+    - else
+      %title #{site.title}
     %meta{ :name=>'viewport', :content=>'width=device-width, initial-scale=1.0' }
     %meta{ :name=>'keywords', :content=>'ingress,resistance,australia,melbourne,victoria,ballarat,geelong,bendigo,augmented reality,gps,android,ios,iphone,ipad,mobile,exercise,game,gaming,real world,aliens,scifi' }
 
@@ -29,7 +32,7 @@
     %link{ :rel=>'shortcut icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
     %link{ :rel=>'apple-touch-icon', :type=>"image/png", :href=>"#{site.base_url}/images/favicon.png" }
   %body
-    %nav.navbar.navbar-default.navbar-fixed-top{:role => "navigation"}
+    %nav.navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
       .container
         .navbar-header
           %a.navbar-brand{ :href=>"/" }

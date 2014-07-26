@@ -3,13 +3,15 @@ layout: base
 ---
 - if site.news
   .row
-    .col-md-12
-      .panel.panel-info
+    .col-md-8.col-md-offset-2
+      .panel.panel-primary
         .panel-heading
-          %h2.text-center
+          %h3.text-center.panel-title{ :style=>"font-size:28pt" }
             %i.fa.fa-bullhorn.fa-lg.fa-fw
-            %a{ :href => "#{site.news.url}" }
-              #{site.news.text}
+            Resistance Announcement
+        .panel-body.text-center
+          %a{ :href=>"#{site.news.url}" }
+            #{site.news.text}
 .row
   .col-md-4
     %a{ :href=>"#{site.base_url}/ingress" }

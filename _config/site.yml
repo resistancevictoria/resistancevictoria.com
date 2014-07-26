@@ -7,7 +7,9 @@ ingress_beginners_guide: SOAy-_GUQ1Q
 base_url: ''
 
 news:
-  text: <i class="fa fa-lg fa-fw fa-android"></i><i class="fa fa-fw fa-plus"></i><i class="fa fa-lg fa-fw fa-apple"></i><i class="fa fa-fw fa-arrow-right"></i><i class="fa fa-lg fa-fw fa-heart"></i><br><br>The Resistance Welcomes iOS Agents
+  text: >
+    Welcome iOS Agents!
+    If you're new click here for a quick dos and dont's intro.
   url: /ios
 
 app:
