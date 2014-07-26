@@ -2,5 +2,12 @@
 layout: design
 ---
 .container
+  %h1
+    #{site.title}
+    - if page.url !~ /^\/join\//
+      %small.animated.bounceInDown
+        %span.label.label-success
+          %a{ :href=>"/join", :style=>"color: inherit;" }
+            Join now!
   ~ content
 
