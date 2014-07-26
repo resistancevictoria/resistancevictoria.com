@@ -1,0 +1,16 @@
+---
+layout: design
+---
+%section{:id => "megatron", "data-speed" => "3", "data-type" => "background"}
+  .jumbotron
+    .container
+      %h1 #{site.title}
+      %p
+        %span.tagline #{site.tagline}
+      %p
+        %a.animated.bounceIn.btn.btn-default.btn-primary.btn-lg{ :href=>"#{site.base_url}/join" }
+          %i.fa.fa-info-circle.fa-lg
+          Join the Resistance
+          %i.fa.fa-angle-double-right
+.container
+  ~ content
