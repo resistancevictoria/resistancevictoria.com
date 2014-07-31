@@ -1,16 +1,16 @@
 title: "Ingress: Resistance Victoria"
 tagline: Enlightenment is a lie. The aliens wish to enslave us. Fight for humanity.
 
-ingress_report_id: pReYaKWWbtI
+ingress_report_id: fOlfkmqwbqc
 ingress_beginners_guide: SOAy-_GUQ1Q
 
 base_url: ''
 
-news:
-  text: >
-    Welcome iOS Agents!
-    If you're new click here for a quick dos and dont's intro.
-  url: /ios
+# news:
+#   text: >
+#     Welcome iOS Agents!
+#     If you're new click here for a quick dos and dont's intro.
+#   url: /ios
 
 app:
   android: https://play.google.com/store/apps/details?id=com.nianticproject.ingress
