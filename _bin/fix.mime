@@ -1,0 +1,16 @@
+#!/bin/sh
+
+case $1 in
+  "stage")
+    s3cmd put -m "text/css" _site/stylesheets/*.css s3://stage.resistancevictoria.com/stylesheets/
+    s3cmd put -m "text/javascript" _site/javascripts/*.js s3://stage.resistancevictoria.com/javascripts/
+    ;;
+
+  "prod")
+    s3cmd put -m "text/css" _site/stylesheets/*.css s3://vic.blue/stylesheets/
+    s3cmd put -m "text/javascript" _site/javascripts/*.js s3://vic.blue/javascripts/
+    ;;
+
+  *)
+    echo "$0 [stage|prod]"
+esac
