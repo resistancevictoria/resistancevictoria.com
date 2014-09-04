@@ -1,5 +1,6 @@
 ---
 layout: base
+interpolate: true
 ---
 
 ## <i class="fa fa-cogs"></i> README.md
@@ -12,4 +13,4 @@ layout: base
 
 ### Make contact
 
-Direct questions about this website to `agent@vic.blue`
+Direct questions about this website to `#{site.agent_email}`
