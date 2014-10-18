@@ -1,3 +1,6 @@
+---
+interpolate: true
+---
 $(document).ready(function() {
   // cache the window object
   $window = $(window);
@@ -28,8 +31,26 @@ $(document).ready(function() {
       return false;
     }
   });
+
+  setInterval(showMoto, #{site.mottoDelay});
 });
 
 $(window).on('resize load', function() {
     $('body').css({"padding-top": $(".navbar").height() + 40 + "px"});
 });
+
+var mottos = #{site.mottos};
+var motto = 0;
+
+function showMoto() {
+   $('#motto').removeClass('animated fadeInLeftBig');
+   $('#motto').addClass('animated fadeOutRightBig');
+   $('#motto').one(
+     'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+     function() {
+       $('#motto').html(mottos[motto++%mottos.length]);
+       $('#motto').removeClass('animated fadeOutRightBig');
+       $('#motto').addClass('animated fadeInLeftBig');
+     }
+   );
+}

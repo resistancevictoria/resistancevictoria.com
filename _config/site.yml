@@ -14,6 +14,14 @@ base_url: ''
 #     If you're new click here for a quick dos and dont's intro.
 #   url: /ios
 
+mottoDelay: 10000
+mottos:
+  - Embrace <strong id="human">Self Determination</strong>
+  - Embrace <strong id="human">Individuality</strong>
+  - Protect <strong id="human">Humanity</strong>
+  - Enjoy <strong id="human">Comradery</strong>
+  - You are the <strong id="human">Resistance</strong>
+
 app:
   android: https://play.google.com/store/apps/details?id=com.nianticproject.ingress
   ios: https://itunes.apple.com/au/app/ingress/id576505181?mt=8&uo=4

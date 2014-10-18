@@ -2,6 +2,7 @@
 @import "variables";
 @import "bootstrap";
 @import "bootstrap.scss";
+@import "compass/css3";
 
 body {
   color: #336;
@@ -19,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
-  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  @include box-shadow(0 0 10px rgba(0,0,0,0.8));
 }
 
 .navbar-brand {
@@ -70,9 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron {
-  -webkit-box-shadow: 0 0 20px 5px #00c0ff;
-  -moz-box-shadow: 0 0 20px 5px #00c0ff;
-  box-shadow: 0 0 20px 5px #00c0ff;
+  @include box-shadow(0 0 20px 5px #00c0ff);
   min-width: 325px;
 }
 
@@ -134,5 +133,28 @@ footer {
 }
 
 .panel {
-  box-shadow: 0 0px 5px rgba(0,0,0,.1);
+  @include box-shadow(0 0px 5px rgba(0,0,0,.1));
+}
+
+#motto {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  @include text-shadow(rgba(black,0.3) 0 2px 2px);
+}
+
+@media all and (min-width: $screen-md) {
+  #motto {
+    font-size: 42pt;
+  }
+}
+@media all and (max-width: $screen-md) {
+  #motto {
+    font-size: 28pt;
+  }
+}
+@media all and (max-width: $screen-sm) {
+  #motto {
+    font-size: 16pt;
+  }
 }
