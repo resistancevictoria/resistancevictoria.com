@@ -10,6 +10,7 @@ body {
   font-weight: 300;
   min-width: 340px;
   padding-top: 90px;
+  z-index: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,43 +29,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #000 !important;
   text-shadow: none !important;
   font-weight: 900 !important;
-
-  background-image: -moz-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -ms-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3ef), to(#00c0ff));
-  background-image: -webkit-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -o-linear-gradient(top, #3ef, #00c0ff);
-  background-image: linear-gradient(top, #3ef, #00c0ff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ef', endColorstr='#00c0ff', GradientType=0);
-
+  @include background-image(linear-gradient(#3ef, #00c0ff));
   background-repeat: repeat-x;
-
   padding-top: 1px;
   padding-bottom: 1px;
 }
 
 .navbar .nav > li > a:hover {
   background-color: #00c0ff;
-  background-image: -moz-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -ms-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3ef), to(#00c0ff));
-  background-image: -webkit-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -o-linear-gradient(top, #3ef, #00c0ff);
-  background-image: linear-gradient(top, #3ef, #00c0ff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ef', endColorstr='#00c0ff', GradientType=0);
+  @include background-image(linear-gradient(#3ef, #00c0ff));
   background-repeat: repeat-x;
   text-shadow: none !important;
 }
 
 .btn:hover {
   background-color: #00c0ff;
-  background-image: -moz-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -ms-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3ef), to(#00c0ff));
-  background-image: -webkit-linear-gradient(top, #3ef, #00c0ff);
-  background-image: -o-linear-gradient(top, #3ef, #00c0ff);
-  background-image: linear-gradient(top, #3ef, #00c0ff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ef', endColorstr='#00c0ff', GradientType=0);
+  @include background-image(linear-gradient(#3ef, #00c0ff));
   background-repeat: repeat-x;
   color: #000;
   text-shadow: none;

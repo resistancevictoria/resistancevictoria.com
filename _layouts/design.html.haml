@@ -66,10 +66,11 @@
                 %hr
                 %li.dropdown-text
                   A list of Ingress anomalies that have included local towns/cities
-    ~ content
-    .container
-      %hr
-      %footer
+    %div#main
+      ~ content
+    %footer
+      .container
+        %hr
         %p{ :style=>'text-align: right; font-size: 75%;' }
           Generated #{Time.now} by
           %a{ :href=>"http://awestruct.org/" } {:awestruct}
