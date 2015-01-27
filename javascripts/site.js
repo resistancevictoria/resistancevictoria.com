@@ -6,22 +6,22 @@ $(document).ready(function() {
   $window = $(window);
 
   $('.pancol_1').addClass("animated fadeOutLeft").viewportChecker({
-    classToAdd: 'fadeInLeft',
-    classToRemove: 'fadeOutLeft',
+    classWhenVisible: 'fadeInLeft',
+    classWhenNotVisible: 'fadeOutLeft',
     repeat: true,
     offset: 100
   });
 
   $('.pancol_2').addClass("animated fadeOut").viewportChecker({
-    classToAdd: 'fadeIn',
-    classToRemove: 'fadeOut',
+    classWhenVisible: 'fadeIn',
+    classWhenNotVisible: 'fadeOut',
     repeat: true,
     offset: 200
   });
 
   $('.pancol_3').addClass("animated fadeOutRight").viewportChecker({
-    classToAdd: 'fadeInRight',
-    classToRemove: 'fadeOutRight',
+    classWhenVisible: 'fadeInRight',
+    classWhenNotVisible: 'fadeOutRight',
     repeat: true,
     offset: 100
   });
