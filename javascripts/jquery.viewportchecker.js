@@ -1,111 +1,113 @@
 (function($){
-    $.fn.viewportChecker = function(useroptions){
-        // Define options and extend with user
-        var options = {
-            classToAdd: 'visible',
-            classToRemove : 'invisible',
-            offset: 100,
-            repeat: false,
-            invertBottomOffset: true,
-            callbackFunction: function(elem, action){},
-            scrollHorizontal: false
-        };
-        $.extend(options, useroptions);
+	 $.fn.viewportChecker = function(useroptions){
+			// Define options and extend with user
+			var options = {
+				classWhenVisible: 'visible',
+				classWhenNotVisible : 'invisible',
+				offset: 100,
+				repeat: false,
+				invertBottomOffset: true,
+				callbackFunction: function(elem, action){},
+				scrollHorizontal: false
+			};
+			$.extend(options, useroptions);
 
-        // Cache the given element and height of the browser
-        var $elem = this,
-            windowSize = {height: $(window).height(), width: $(window).width()},
-            scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+			// Cache the given element and height of the browser
+			var $elem = this,
+				windowSize = {height: $(window).height(), width: $(window).width()},
+				scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
 
-        /*
-         * Main method that checks the elements and adds or removes the class(es)
-         */
-        this.checkElements = function(){
-            var viewportStart, viewportEnd;
+			/*
+			* Main method that checks the elements and adds or removes the class(es)
+			*/
+			this.checkElements = function() {
+				var viewportStart, viewportEnd;
 
-            // Set some vars to check with
-            if(!options.scrollHorizontal){
-                viewportStart = $(scrollElem).scrollTop();
-                viewportEnd = (viewportStart + windowSize.height);
-            }
-            else{
-                viewportStart = $(scrollElem).scrollLeft();
-                viewportEnd = (viewportStart + windowSize.width);
-            }
+				// Set some vars to check with
+				if(!options.scrollHorizontal) {
+					 viewportStart = $(scrollElem).scrollTop();
+					 viewportEnd = (viewportStart + windowSize.height);
+				} else {
+					 viewportStart = $(scrollElem).scrollLeft();
+					 viewportEnd = (viewportStart + windowSize.width);
+				}
 
-            // Loop through all given dom elements
-            $elem.each(function(){
-                var $obj = $(this),
-                    objOptions = {},
-                    attrOptions = {};
+				// Loop through all given dom elements
+				$elem.each(function() {
+					 var $obj = $(this), objOptions = {}, attrOptions = {};
 
-                //  Get any individual attribution data
-                if ($obj.data('vp-add-class'))
-                    attrOptions.classToAdd = $obj.data('vp-add-class');
-                if ($obj.data('vp-remove-class'))
-                    attrOptions.classToRemove = $obj.data('vp-remove-class');
-                if ($obj.data('vp-offset'))
-                    attrOptions.offset = $obj.data('vp-offset');
-                if ($obj.data('vp-repeat'))
-                    attrOptions.repeat = $obj.data('vp-repeat');
-                if ($obj.data('vp-scrollHorizontal'))
-                    attrOptions.scrollHorizontal = $obj.data('vp-scrollHorizontal');
-                if ($obj.data('vp-invertBottomOffset'))
-                    attrOptions.invertBottomOffset = $obj.data('vp-invertBottomOffset');
+					 //	Get any individual attribution data
+					 if ($obj.data('vp-add-class'))
+							attrOptions.classWhenVisible = $obj.data('vp-add-class');
+					 if ($obj.data('vp-remove-class'))
+							attrOptions.classWhenNotVisible = $obj.data('vp-remove-class');
+					 if ($obj.data('vp-offset'))
+							attrOptions.offset = $obj.data('vp-offset');
+					 if ($obj.data('vp-repeat'))
+							attrOptions.repeat = $obj.data('vp-repeat');
+					 if ($obj.data('vp-scrollHorizontal'))
+							attrOptions.scrollHorizontal = $obj.data('vp-scrollHorizontal');
+					 if ($obj.data('vp-invertBottomOffset'))
+							attrOptions.invertBottomOffset = $obj.data('vp-invertBottomOffset');
 
-                // Extend objOptions with data attributes and default options
-                $.extend(objOptions, options);
-                $.extend(objOptions, attrOptions);
+					 // Extend objOptions with data attributes and default options
+					 $.extend(objOptions, options);
+					 $.extend(objOptions, attrOptions);
 
-                // If class already exists; quit
-                if ($obj.hasClass(objOptions.classToAdd) && !objOptions.repeat){
-                    return;
-                }
+					 // If class already exists; quit
+					 if ($obj.hasClass(objOptions.classWhenVisible) && !objOptions.repeat) {
+							return;
+					 }
 
-                // define the top position of the element and include the offset which makes is appear earlier or later
-                var elemStart = (!objOptions.scrollHorizontal) ? Math.round( $obj.offset().top ) + objOptions.offset : Math.round( $obj.offset().left ) + objOptions.offset,
-                    elemEnd = (!objOptions.scrollHorizontal) ? elemStart + $obj.height() : elemStart + $obj.width();
+					 // define the start/end positions of the element and include the offset
+					 // which makes is appear earlier or later
+					 var elemStart = (!objOptions.scrollHorizontal) ?
+													   Math.round( $obj.offset().top ) + objOptions.offset :
+														 Math.round( $obj.offset().left ) + objOptions.offset,
+							 elemEnd   = (!objOptions.scrollHorizontal) ?
+														 elemStart + $obj.height() :
+														 elemStart + $obj.width();
 
-                if(objOptions.invertBottomOffset)
-                	elemEnd -= (objOptions.offset * 2);
+					 if (objOptions.invertBottomOffset) elemEnd -= (objOptions.offset * 2);
 
-                // Add class when in viewport
-                if ((elemStart < viewportEnd) && (elemEnd > viewportStart)){
-                    // trigger once
-                    if (!$obj.hasClass(objOptions.classToAdd)) {
-                       $obj.removeClass(objOptions.classToRemove);
-                       $obj.addClass(objOptions.classToAdd);
-                    }
+					 // Add class when in viewport
+					 if ((elemStart < viewportEnd) && (elemEnd > viewportStart)) {
+							// trigger once
+							if (!$obj.hasClass(objOptions.classWhenVisible)) {
+								$obj.removeClass(objOptions.classWhenNotVisible);
+								$obj.addClass(objOptions.classWhenVisible);
 
-                    // Do the callback function. Callback wil send the jQuery object as parameter
-                    objOptions.callbackFunction($obj, "add");
+							  // Do the callback function. Callback will send the jQuery object as parameter
+							  objOptions.callbackFunction($obj, "add");
+							}
 
-                // Remove class when not in viewport
-                } else if ((elemStart > viewportEnd) || (elemEnd < viewportStart)) {
-                    // trigger once
-                    if (!$obj.hasClass(objOptions.classToRemove)) {
-                       $obj.removeClass(objOptions.classToAdd);
-                       $obj.addClass(objOptions.classToRemove);
-                    }
-                    // Do the callback function.
-                    objOptions.callbackFunction($obj, "remove");
-                }
-            });
-        };
+					 // Remove class when not in viewport
+					 } else {
+							// trigger once
+							if (!$obj.hasClass(objOptions.classWhenNotVisible)) {
+								$obj.removeClass(objOptions.classWhenVisible);
+								$obj.addClass(objOptions.classWhenNotVisible);
 
-        // Run checkelements on load and scroll
-        $(window).bind("load scroll touchmove MSPointerMove", this.checkElements);
+							  // Do the callback function.
+							  objOptions.callbackFunction($obj, "remove");
+							}
+					 }
+				});
+			};
 
-        // On resize change the height var
-        $(window).resize(function(e){
-            windowSize = {height: $(window).height(), width: $(window).width()},
-            $elem.checkElements();
-        });
+			// Run checkelements on load and scroll
+			$(window).bind("load scroll touchmove MSPointerMove", this.checkElements);
 
-        // trigger inital check if elements already visible
-        this.checkElements();
+			// On resize change the height var
+			$(window).resize(function(e) {
+				windowSize = {height: $(window).height(), width: $(window).width()},
+				$elem.checkElements();
+			});
 
-        // Default jquery plugin behaviour
-        return this;
-    };
+			// trigger inital check if elements already visible
+			this.checkElements();
+
+			// Default jquery plugin behaviour
+			return this;
+	 };
 })(jQuery);
