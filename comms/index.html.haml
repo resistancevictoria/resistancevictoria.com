@@ -26,13 +26,15 @@ title: Communications
 
   - site.comms.each_slice(3) do |slice|
     .row
+      - col = 0
       - slice.each do |area|
+        - col += 1
         .col-md-4
-          .panel.panel-default
+          .panel.panel-default{ :class => "pancol_#{ col }" }
             .panel-heading
               %h4
                 %i.fa.fa-map-marker
-                #{area.group_name}
+                #{ area.group_name }
             .panel-body
               - if area.blurb
                 :textile
@@ -55,7 +57,7 @@ title: Communications
     %h3 General comms (not area specific)
 .row
   .col-md-4
-    .panel.panel-default
+    .panel.panel-default.pancol_1
       .panel-heading
         %h4
           %i.fa.fa-bullhorn
@@ -66,7 +68,7 @@ title: Communications
           %a.btn-default.btn{ :href=>"#{site.base_url}/recruit" }
             %i.fa.fa-google-plus-square
             Visit Page
-    .panel.panel-default
+    .panel.panel-default.pancol_1
       .panel-heading
         %h4
           %i.fa.fa-bullhorn
@@ -78,7 +80,7 @@ title: Communications
             %i.fa.fa-google-plus-square
             Visit Page
   .col-md-4
-    .panel.panel-default
+    .panel.panel-default.pancol_2
       .panel-heading
         %h4
           %i.fa.fa-coffee
@@ -104,7 +106,7 @@ title: Communications
           This community is for verified Ingress players to post, but it is public for anyone to read.
 
   .col-md-4
-    .panel.panel-default
+    .panel.panel-default.pancol_3
       .panel-heading
         %h4
           %i.fa.fa-road

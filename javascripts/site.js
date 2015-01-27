@@ -5,6 +5,27 @@ $(document).ready(function() {
   // cache the window object
   $window = $(window);
 
+  $('.pancol_1').addClass("animated fadeOutLeft").viewportChecker({
+    classToAdd: 'fadeInLeft',
+    classToRemove: 'fadeOutLeft',
+    repeat: true,
+    offset: 100
+  });
+
+  $('.pancol_2').addClass("animated fadeOut").viewportChecker({
+    classToAdd: 'fadeIn',
+    classToRemove: 'fadeOut',
+    repeat: true,
+    offset: 200
+  });
+
+  $('.pancol_3').addClass("animated fadeOutRight").viewportChecker({
+    classToAdd: 'fadeInRight',
+    classToRemove: 'fadeOutRight',
+    repeat: true,
+    offset: 100
+  });
+
   $('section[data-type="background"]').each(function(){
     // declare the variable to affect the defined data-type
     var $scroll = $(this);
