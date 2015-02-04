@@ -8,11 +8,11 @@ agent_email: agent@vic.blue
 
 base_url: ''
 
-# news:
-#   text: >
-#     Welcome iOS Agents!
-#     If you're new click here for a quick dos and dont's intro.
-#   url: /ios
+news:
+  text: >
+    <strong>Ingress First Saturday #IngressFS</strong> <small>(Saturday 7th Feb, 11:30am)</small><br>
+    Part social, part competitive, Ingress: First Saturday is an Agent-organized free meetup that happens on the first Saturday of the month. Click here for the Melbourne event details <i class="fa fa-arrow-circle-right"></i>
+  url: https://plus.google.com/u/0/events/cgtrj6h16nfjc8u3l9grnt8q9ug
 
 mottoDelay: 10000
 mottos:
