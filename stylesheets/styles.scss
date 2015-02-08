@@ -104,6 +104,7 @@ footer {
 #alien { color: #28f428; }
 
 #human { color: #00c2ff; }
+.human { color: #00c2ff; }
 
 .dropdown-text {
   text-transform: none;
@@ -116,25 +117,23 @@ footer {
   @include box-shadow(0 0px 5px rgba(0,0,0,.1));
 }
 
-#motto {
+#mottopost {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   white-space: nowrap;
   @include text-shadow(rgba(black,0.3) 0 2px 2px);
+	width: 50%;
+	display: block;
 }
 
-@media all and (min-width: $screen-md) {
-  #motto {
-    font-size: 42pt;
-  }
+#mottopre {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 100;
+  white-space: nowrap;
+  @include text-shadow(rgba(black,0.3) 0 2px 2px);
+	width: 40%;
+	display: block;
+	text-align: right;
+	float: left;
 }
-@media all and (max-width: $screen-md) {
-  #motto {
-    font-size: 28pt;
-  }
-}
-@media all and (max-width: $screen-sm) {
-  #motto {
-    font-size: 16pt;
-  }
-}
+

@@ -3,9 +3,11 @@ layout: design
 ---
 %section{:id => "megatron", "data-speed" => "3", "data-type" => "background"}
   .jumbotron
-    .container
-      %span#motto.animated.fadeInLeftBig
-        You are the <strong id="human">Resistance</strong>.
+    .container#motcontainer
+      %span#mottopre.animated.fadeInDown
+        <strong>free</strong>your
+      %span.human#mottopost.animated.fadeInUp
+        mind
 .container
   %h1
     #{site.title}
