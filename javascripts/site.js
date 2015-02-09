@@ -67,25 +67,26 @@ var mottos = #{site.mottos};
 var motto = 0;
 
 function showMotto() {
-   $('#mottopre').removeClass('animated fadeInDown');
-   $('#mottopre').addClass('animated fadeOutDown');
-   $('#mottopre').one(
-     'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-     function() {
-       $('#mottopre').html(mottos[motto++%mottos.length][0]);
-       $('#mottopre').removeClass('animated fadeOutDown');
-       $('#mottopre').addClass('animated fadeInDown');
-     }
-   );
+	motto = motto + 1;
+  $('#mottopre').removeClass('animated fadeInDown');
+  $('#mottopre').addClass('animated fadeOutDown');
+  $('#mottopre').one(
+    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+    function() {
+      $('#mottopre').html(mottos[motto%mottos.length][0]);
+      $('#mottopre').removeClass('animated fadeOutDown');
+      $('#mottopre').addClass('animated fadeInDown');
+    }
+  );
 
-   $('#mottopost').removeClass('animated fadeInUp');
-   $('#mottopost').addClass('animated fadeOutUp');
-   $('#mottopost').one(
-     'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-     function() {
-       $('#mottopost').html(mottos[motto%mottos.length][1]);
-       $('#mottopost').removeClass('animated fadeOutUp');
-       $('#mottopost').addClass('animated fadeInUp');
-     }
-   );
+  $('#mottopost').removeClass('animated fadeInUp');
+  $('#mottopost').addClass('animated fadeOutUp');
+  $('#mottopost').one(
+    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+    function() {
+      $('#mottopost').html(mottos[motto%mottos.length][1]);
+      $('#mottopost').removeClass('animated fadeOutUp');
+      $('#mottopost').addClass('animated fadeInUp');
+    }
+  );
 }
