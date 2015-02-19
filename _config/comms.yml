@@ -6,12 +6,12 @@
     "ingress.com/intel":https://www.ingress.com/intel?ll=-37.813702,144.957132&z=14 and centre your map
     over Melbourne then in faction chat broadcast your _Google+
     profile initials_ to prove your Resistance credentials i.e.
-    *"request to join g+ group, my initials are XY @doobmie @mokurai @borborigmi @simonoid"*
+    *"request to join g+ group, my initials are XY @doobmie @GenElectrik @iwilldestroy @clareabelle @Stationary @PhiAU"*
     or if you already know a Resistance member ask them to vouch
     for you in the group and a mod will invite you.
      
     Adding the
-    *@doobmie @mokurai @borborigmi @simonoid*
+    *@doobmie @GenElectrik @iwilldestroy @clareabelle @Stationary @PhiAU*
     part makes it easier for our mods to see your request and add
     you to the community quicker.
 
@@ -35,25 +35,25 @@
      
     *request to join Ballarat group, my initials are XY*
 
-- group_name: North East Melbourne
-  url: /nemelb
-  verified_agents: true
-  blurb: >
-    _Ask to join_ this community then using the "Intel
-    Map":https://www.ingress.com/intel?ll=-37.791288,144.987431&z=15 zoom in on the North East of
-    Melbourne and broadcast the following:
-     
-    *request to join North East Melbourne group, my initials are XY*
+# - group_name: North East Melbourne
+#   url: /nemelb
+#   verified_agents: true
+#   blurb: >
+#     _Ask to join_ this community then using the "Intel
+#     Map":https://www.ingress.com/intel?ll=-37.791288,144.987431&z=15 zoom in on the North East of
+#     Melbourne and broadcast the following:
+#      
+#     *request to join North East Melbourne group, my initials are XY*
 
-- group_name: Melbourne Metro
-  url: https://plus.google.com/communities/107159856739895298603
-  verified_agents: true
-  blurb: >
-    _Ask to join_ this community then using the "Intel
-    Map":https://www.ingress.com/intel?ll=-37.81316,144.962261&z=16 zoom in on the metro area of
-    Melbourne and broadcast the following:
-     
-    *request to join Melbourne Metro group, my initials are XY*
+# - group_name: Melbourne Metro
+#   url: https://plus.google.com/communities/107159856739895298603
+#   verified_agents: true
+#   blurb: >
+#     _Ask to join_ this community then using the "Intel
+#     Map":https://www.ingress.com/intel?ll=-37.81316,144.962261&z=16 zoom in on the metro area of
+#     Melbourne and broadcast the following:
+#      
+#     *request to join Melbourne Metro group, my initials are XY*
 
 - group_name: East Melbourne
   url: https://plus.google.com/communities/104078442820685324931
@@ -63,7 +63,7 @@
     Map":https://www.ingress.com/intel?ll=-37.830381,145.008352&z=15 zoom in on the Eastern area of
     Melbourne and broadcast the following:
      
-    *request to join East Melbourne group, my initials are XY*
+    *request to join East Melbourne group, my initials are XY @PhilAU*
 
 - group_name: Gippsland
   url: https://plus.google.com/communities/115523627272337427727
@@ -75,25 +75,25 @@
      
     *request to join Gippsland group, my initials are XY*
 
-- group_name: Western Victoria
-  url: https://plus.google.com/communities/111519469334095888318
-  verified_agents: true
-  blurb: >
-    _Ask to join_ this community then using the "Intel
-    Map":http://ingress.com/intel zoom in on Western Victoria and
-    broadcast the following:
-     
-    *request to join Western Victoria group, my initials are XY*
+# - group_name: Western Victoria
+#   url: https://plus.google.com/communities/111519469334095888318
+#   verified_agents: true
+#   blurb: >
+#     _Ask to join_ this community then using the "Intel
+#     Map":http://ingress.com/intel zoom in on Western Victoria and
+#     broadcast the following:
+#      
+#     *request to join Western Victoria group, my initials are XY*
 
-- group_name: St Kilda
-  url: https://plus.google.com/communities/100122828720410161488
-  verified_agents: true
-  blurb: >
-    _Ask to join_ this community then using the "Intel
-    Map":http://ingress.com/intel zoom in on St Kilda and broadcast
-    the following:
-     
-    *request to join St Kilda group, my initials are XY*
+# - group_name: St Kilda
+#   url: https://plus.google.com/communities/100122828720410161488
+#   verified_agents: true
+#   blurb: >
+#     _Ask to join_ this community then using the "Intel
+#     Map":http://ingress.com/intel zoom in on St Kilda and broadcast
+#     the following:
+#      
+#     *request to join St Kilda group, my initials are XY*
 
 - group_name: Peninsula
   url: https://plus.google.com/communities/118136969167414076329
@@ -115,16 +115,16 @@
      
     *request to join Bendigo group, my initials are XY*
 
-- group_name: South East Melbourne
-  url: https://plus.google.com/communities/103835807968356782907
-  verified_agents: true
-  blurb: >
-    _Ask to join_ this community then using the "Intel
-    Map":http://ingress.com/intel zoom in on the South East area of
-    Melbourne and broadcast the following:
-     
-    *request to join SE Melbourne group, my initials are XY*
-
+# - group_name: South East Melbourne
+#   url: https://plus.google.com/communities/103835807968356782907
+#   verified_agents: true
+#   blurb: >
+#     _Ask to join_ this community then using the "Intel
+#     Map":http://ingress.com/intel zoom in on the South East area of
+#     Melbourne and broadcast the following:
+#      
+#     *request to join SE Melbourne group, my initials are XY*
+ 
 - group_name: VIC &amp; NSW Rural Resistance
   verified_agents: true
   url: https://plus.google.com/communities/116494659561837069139
