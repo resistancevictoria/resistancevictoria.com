@@ -10,9 +10,10 @@ base_url: ''
 
 news:
   text: >
-    <span style="font-size:24pt;">XM Anomaly Satellite: Adelaide</span></a> <small>(<i class="fa fa-calendar"></i> Saturday 28th March)</small><br>
-    Tomorrow our neighbour state's capital will be a satellite site for the <strong>Shonin</strong> anomaly series. <a href="https://plus.google.com/events/ceg2p5h4r0o15lubnsl1uk1hjb8">Good luck agents! <i class="fa fa-arrow-circle-right"></i></a>
-  url: https://plus.google.com/events/ceg2p5h4r0o15lubnsl1uk1hjb8
+    Resistance Wins XM Anomaly Satellite in Adelaide: <strong>646</strong> to 344</a>
+    <br/>
+    Well done team!
+  url: https://plus.google.com/+Ingress/posts/ctAHa9Z8QVo
 
 mottoDelay: 5000
 mottos:
