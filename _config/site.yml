@@ -8,12 +8,10 @@ agent_email: agent@vic.blue
 
 base_url: ''
 
-#news:
-#  text: >
-#    Resistance Wins XM Anomaly Satellite in Adelaide: <strong id="human">646</strong> to <span id="alien">344</span></a><br/>
-#    We also won the global fight with the final score of <strong id="human">23918</strong> to <span id="alien">15208</span><br/>
-#    Well done team!
-#  url: https://plus.google.com/+Ingress/posts/ctAHa9Z8QVo
+news:
+  text: >
+    Resistance wins the Persepolis Anomaly Series, well done team!
+  url: https://plus.google.com/+Ingress/posts/Ve17yZPhyE3
 
 mottoDelay: 5000
 mottos:
