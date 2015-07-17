@@ -8,10 +8,10 @@ agent_email: agent@vic.blue
 
 base_url: ''
 
-news:
-  text: >
-    Resistance wins the Persepolis Anomaly Series, well done team!
-  url: https://plus.google.com/+Ingress/posts/Ve17yZPhyE3
+# news:
+#   text: >
+#     Resistance wins the Persepolis Anomaly Series, well done team!
+#   url: https://plus.google.com/+Ingress/posts/Ve17yZPhyE3
 
 mottoDelay: 5000
 mottos:
