@@ -5,13 +5,14 @@ layout: home
   .row
     .col-md-8.col-md-offset-2
       .panel.panel-default
-        .panel-heading
+        .panel-heading#news
           %h3.text-center.panel-title{ :style=>"font-size:28pt" }
             %i.fa.fa-bullhorn.fa-lg.fa-fw
             Resistance Announcement
         .panel-body.text-center
           %a{ :href=>"#{site.news.url}" }
             #{site.news.text}
+            %i.fa.fa-external-link.fa-lg.fa-fw
 .row
   .col-md-4
     %a{ :href=>"#{site.base_url}/ingress" }
