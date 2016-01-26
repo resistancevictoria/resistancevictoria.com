@@ -8,10 +8,10 @@ agent_email: agent@vic.blue
 
 base_url: ''
 
-news:
-  text: >
-    Resistance wins the Abaddon Anomaly Series, well done team!
-  url: https://plus.google.com/+Ingress/posts/1Z2vYsbMW7T
+#news:
+#  text: >
+#    Resistance wins the Abaddon Anomaly Series, well done team!
+#  url: https://plus.google.com/+Ingress/posts/1Z2vYsbMW7T
 
 mottoDelay: 5000
 mottos:
