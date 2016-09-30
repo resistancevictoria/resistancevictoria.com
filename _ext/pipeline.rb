@@ -1,3 +1,4 @@
+require 'compass'
 require 'bootstrap-sass'
 require 'redirect_creator'
 require 'haml/filters/textile'

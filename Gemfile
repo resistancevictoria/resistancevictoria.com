@@ -1,20 +1,20 @@
 # This file is a Bundler dependency descriptor file. Its purpose is to list all of
 # the dependencies you are using to build your site. It is highly recommended you use 
 # this to keep your dependencies up to date and not cause conflicts with other gems
-# already on your system. 
+# already on your system.
 #
 # If you do not already have Bundler installed on your computer, run:
 #
 #  gem install bundler
 #
 # To use this dependecy file simply run:
-# 
+#
 #  bundle install
 #
 # We do recommend that you install the gems into another directory however, to ensure
 # your awestruct site is pristine and isn't using versions of gems from other programs.
 # To do this execute:
-# 
+#
 #  bundle install --path .bundle
 #
 # More information about Bundler and its other commands can be found at http://gembundler.com/.
@@ -25,7 +25,7 @@
 source 'https://rubygems.org'                             # This tells Bundler where to look for gems
 
 gem 'awestruct', '>= 0.5.3'                               # Goes without saying
-gem 'rake', '>= 10.3.2'                                    # Needed for the Rakefile to work
+gem 'rake', '>= 11.3.0'                                    # Needed for the Rakefile to work
 gem 'coffee-script', '>= 2.2.0'                         # If using coffee-script or to remove the warning
 # gem 'rb-fsevent', '~> 0.9', :require => false           # to remove warning about pulling, Mac OSX
 gem 'rb-inotify', '>= 0.9.0', :require => false         # to remove warning about pulling, Linux
@@ -33,13 +33,17 @@ gem 'rb-inotify', '>= 0.9.0', :require => false         # to remove warning abou
 # gem 'rb-fchange', '~> 0.0.6', :require => false         # to remove warning about pulling, Windows (ruby 1.8.7)
 gem 'therubyracer', '0.10.0', :platforms => :ruby       # Javascript runtime on mri (needed for LESS and coffee-script)
 # gem 'therubyrhino', '~> 2.0.2', :platforms => :jruby    # Javascript runtime on jruby (needed for LESS and coffee-script)
-# gem 'less', '>= 2.2.2'                                  # If using LESS instead of sass 
+# gem 'less', '>= 2.2.2'                                  # If using LESS instead of sass
 # gem 'org-ruby', '>= 0.8'                                # If using Org-Mode
 gem 'RedCloth', '>= 4.2.9'                              # If using Textile
 gem 'asciidoctor', '>= 0.1.1'                           # If using AsciiDoc syntax, need 0.1.1 for Header support
+gem 'haml', '~> 4.0.0'
 # gem 'slim', '>= 1.3.6'                                  # If using slim instead of haml
-gem 'kramdown', '>= 0.14.2'                             # If using Markdown
+gem 'rdiscount', '= 2.0.7'                             # If using Markdown
 gem 'uglifier', '>= 1.3.0'                              # If using the minify transformer
 gem 'htmlcompressor', '>= 0.0.3'                        # If using the minify transformer
 gem 'haml-contrib', '>= 0'
 gem 'colorize', '>= 0.7.3'
+gem 'mime-types', '>= 2.99.2'
+gem 'bootstrap-sass', '>= 2.3.0'
+gem 'compass', '>= 0'
