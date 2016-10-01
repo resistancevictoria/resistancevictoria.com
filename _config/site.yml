@@ -67,12 +67,14 @@ profiles:
     short_name: Dev
   stage:
     short_name: Stage
+    base_url: http://stage.resistancevictoria.com/
     deploy:
       type: s3
       bucket: s3://stage.resistancevictoria.com/
       uncommitted: true
   production:
     short_name: Home
+    base_url: https://vic.blue/
     google_analytics:
       account: UA-40180228-2
     minify: true
