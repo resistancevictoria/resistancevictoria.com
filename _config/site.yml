@@ -9,9 +9,9 @@ agent_email: agent@vic.blue
 base_url: ''
 
 news:
-  text: >
-    A local <i>Ingress Satellite Event</i> will be occuring in Melbourne on <strong>November 12th</strong>, register your attendance here!
-  url: http://melbourne.willbe.blue/
+# text: >
+#   A local <i>Ingress Satellite Event</i> will be occuring in Melbourne on <strong>November 12th</strong>, register your attendance here!
+# url: http://melbourne.willbe.blue/
 
 mottoDelay: 5000
 mottos:
